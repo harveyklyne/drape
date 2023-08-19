@@ -1,0 +1,21 @@
+---
+title: "drape"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{drape}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, include = FALSE}
+library(drape)
+```
+
+`drape` is an R package used to perform doubly robust average partial effect estimation, via kernel resmoothing and location-scale score estimation. The function `drape()` performs this task for arbitrary plug-in regression procedures. The function `resmooth()` transforms a fitted prediction model into a smooth version. The function `spline_score()` estimates the smoothing spline score function estimate.
