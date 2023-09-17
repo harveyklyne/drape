@@ -28,7 +28,6 @@ resmooth <- function(fit,
   #' @export
   #'
   #' @examples
-  #' \dontrun{
   #' # Single bandwidth
   #' X <- matrix(seq(-2,2,by=0.05))
   #' fit <- function(Y){1*(rowMeans(Y)<0)}
@@ -42,7 +41,6 @@ resmooth <- function(fit,
   #' lm1 <- stats::lm(y~X1+sin(X2), data=df)
   #' fit <- function(Y){as.vector(stats::predict(lm1, newdata=data.frame(Y)))}
   #' resmooth(fit=fit, X=X, d=2)
-  #' }
 
   gridpoints <- seq(-sd_trim, sd_trim, length.out=n_points)
   prob_weights <- stats::dnorm(gridpoints)

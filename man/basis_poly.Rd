@@ -24,9 +24,8 @@ Computes the score function estimate when rho(X) is assumed to lie within the sp
 of the polynomial basis of X.
 }
 \examples{
-\dontrun{
+set.seed(0)
 X <- matrix(stats::rnorm(200), ncol=4)
 bs <- basis_poly(X=X, d=1, degree=2)
 bs$rho(X)
-}
 }

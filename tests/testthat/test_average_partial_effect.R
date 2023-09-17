@@ -26,5 +26,13 @@ test_that("drape works with simple nuisance estimators", {
   expect_vector(out$se, 1)
 })
 
-
-
+test_that("drape works with xgboost nuisance estimators", {
+  set.seed(0)
+  data <- simulate_data(1000, "normal", "plm")
+  params <- list("eta" = 0.1, "max_depth" = 2, "nrounds" = 100)
+  response_regression <- predictor_regression <- function(X,y){
+      fit_xgboost(X = X, y = y, params = params)}
+  out <- drape(data$y, data$x, data$z, response_regression, predictor_regression)
+  expect_vector(out$est, 1)
+  expect_vector(out$se, 1)
+})

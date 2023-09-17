@@ -57,14 +57,7 @@ variables used in computations.
 Estimate the doubly-robust average partial effect estimate of X on Y, in the presence of Z.
 }
 \examples{
-\dontrun{
 set.seed(0)
-data <- simulate_data(1000, "normal", "plm")
-params <- list("eta" = 0.1, "max_depth" = 2, "nrounds" = 100)
-response_regression <- predictor_regression <- function(X,y){
-    fit_xgboost(X = X, y = y, params = params)}
-drape(data$y, data$x, data$z, response_regression, predictor_regression)
-
 data <- simulate_data(200, "normal", "plm")
 response_regression <- function(X,y){
     df <- data.frame(y,X)
@@ -87,5 +80,4 @@ predictor_regression <- function(z,x){
     return(list("fit"=fit))
 }
 drape(data$y, data$x, data$z, response_regression, predictor_regression, nfolds=2)
-}
 }

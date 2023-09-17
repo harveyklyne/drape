@@ -42,7 +42,6 @@ Smooth the predictions of a fitted model by convolving them
 with a Gaussian kernel along the dth covariate.
 }
 \examples{
-\dontrun{
 # Single bandwidth
 X <- matrix(seq(-2,2,by=0.05))
 fit <- function(Y){1*(rowMeans(Y)<0)}
@@ -56,5 +55,4 @@ df <- data.frame(y,X)
 lm1 <- stats::lm(y~X1+sin(X2), data=df)
 fit <- function(Y){as.vector(stats::predict(lm1, newdata=data.frame(Y)))}
 resmooth(fit=fit, X=X, d=2)
-}
 }

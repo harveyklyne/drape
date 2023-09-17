@@ -29,7 +29,6 @@ Univariate score estimation via the smoothing spline method of Cox 1985
 and Ng 1994.
 }
 \examples{
-\dontrun{
 # Single bandwidth
 x <- stats::rlogis(100)
 spl <- spline_score(x, df=6)
@@ -40,5 +39,4 @@ spl$drho(x)
 x <- stats::rt(n=100, df=4)
 spl <- spline_score(x, df=c(2,5,10))
 spl$rho(x)
-}
 }

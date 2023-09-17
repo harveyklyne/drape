@@ -30,13 +30,11 @@ parameter within CV score within one standard error of df_min.
 K-fold cross-validation for spline_score.
 }
 \examples{
+set.seed(0)
 x <- stats::rt(100, df=4)
-cvspl <- cv_spline_score(x)
-cvspl
+cv_spline_score(x)
 
-\dontrun{
-  x <- stats::rlogis(500)
-  cvspl <- cv_spline_score(x)
-  cvspl$df_min
-}
+x <- stats::rlogis(500)
+cvspl <- cv_spline_score(x)
+cvspl$df_min
 }

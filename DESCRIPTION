@@ -3,7 +3,7 @@ Title: Doubly Robust Average Partial Effects
 Version: 0.0.1
 Authors@R: c(
     person("Harvey", "Klyne", role = c("aut", "cre", "cph"), email = "hklyne@g.harvard.edu"))
-Description: Doubly robust average partial effect estimation. This implementation contains methods for adding additional smoothness to plug-in regression procedures and for estimating score functions using smoothing splines. Details of the method can be found in Harvey Klyne and Rajen D. Shah (2023) <arxiv:2308.09207>.
+Description: Doubly robust average partial effect estimation. This implementation contains methods for adding additional smoothness to plug-in regression procedures and for estimating score functions using smoothing splines. Details of the method can be found in Harvey Klyne and Rajen D. Shah (2023) <arXiv:2308.09207>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 BugReports: https://github.com/harveyklyne/drape/issues

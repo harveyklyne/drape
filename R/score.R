@@ -16,7 +16,6 @@ spline_score <- function(x, df=5, tol=1e-3, nmax=NULL){
   #' @export
   #'
   #' @examples
-  #' \dontrun{
   #' # Single bandwidth
   #' x <- stats::rlogis(100)
   #' spl <- spline_score(x, df=6)
@@ -27,7 +26,6 @@ spline_score <- function(x, df=5, tol=1e-3, nmax=NULL){
   #' x <- stats::rt(n=100, df=4)
   #' spl <- spline_score(x, df=c(2,5,10))
   #' spl$rho(x)
-  #' }
 
 
 
@@ -100,15 +98,13 @@ cv_spline_score <- function(x, df=2:15, nfolds=5L, tol=1e-3, nmax=NULL){
   #'
   #' @export
   #' @examples
+  #' set.seed(0)
   #' x <- stats::rt(100, df=4)
-  #' cvspl <- cv_spline_score(x)
-  #' cvspl
+  #' cv_spline_score(x)
   #'
-  #' \dontrun{
-  #'   x <- stats::rlogis(500)
-  #'   cvspl <- cv_spline_score(x)
-  #'   cvspl$df_min
-  #' }
+  #' x <- stats::rlogis(500)
+  #' cvspl <- cv_spline_score(x)
+  #' cvspl$df_min
 
   n <- length(x)
   ndf <- length(df)
@@ -276,11 +272,10 @@ basis_poly <- function(X, d, degree = 2, lambda = NULL){
   #' @export
   #'
   #' @examples
-  #' \dontrun{
+  #' set.seed(0)
   #' X <- matrix(stats::rnorm(200), ncol=4)
   #' bs <- basis_poly(X=X, d=1, degree=2)
   #' bs$rho(X)
-  #' }
 
   if (degree==1){
     basis <- X
