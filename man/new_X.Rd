@@ -3,7 +3,7 @@
 \name{new_X}
 \alias{new_X}
 \title{Generate a matrix of covariates for use in resmoothing, in which
-the dth column of X is translated successively by the Kronecker
+the d'th column of X is translated successively by the Kronecker
 product of bw and MC_variates.}
 \usage{
 new_X(X, d, MC_variates, bw)
@@ -23,6 +23,6 @@ length(bw)) rows.
 }
 \description{
 Generate a matrix of covariates for use in resmoothing, in which
-the dth column of X is translated successively by the Kronecker
+the d'th column of X is translated successively by the Kronecker
 product of bw and MC_variates.
 }

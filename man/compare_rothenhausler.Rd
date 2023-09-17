@@ -2,7 +2,7 @@
 % Please edit documentation in R/simulation_settings.R
 \name{compare_rothenhausler}
 \alias{compare_rothenhausler}
-\title{Generate simuation data and evaluate Rothenhausler estimator.}
+\title{Generate simulation data and evaluate Rothenhausler estimator.}
 \usage{
 compare_rothenhausler(n, ex_setting, f_setting)
 }
@@ -19,5 +19,5 @@ and the whole data set is used.}
 list containing estimate, standard error estimate, and sample theta (for debugging).
 }
 \description{
-Generate simuation data and evaluate Rothenhausler estimator.
+Generate simulation data and evaluate Rothenhausler estimator.
 }

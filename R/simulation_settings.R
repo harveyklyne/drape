@@ -419,7 +419,7 @@ simulate_train_test <- function(n_tr, n_te, ex_setting, f_setting){
 
 
 compare_partially_linear <- function(n, ex_setting, f_setting) {
-  #' Generate simuation data and evaluate partially linear estimator.
+  #' Generate simulation data and evaluate partially linear estimator.
   #'
   #' @param n integer number of samples. For "401k" ex_setting this is ignored
   #'     and the whole data set is used.
@@ -455,7 +455,7 @@ compare_partially_linear <- function(n, ex_setting, f_setting) {
 }
 
 compare_rothenhausler <- function(n, ex_setting, f_setting) {
-  #' Generate simuation data and evaluate Rothenhausler estimator.
+  #' Generate simulation data and evaluate Rothenhausler estimator.
   #'
   #' @param n integer number of samples. For "401k" ex_setting this is ignored
   #'     and the whole data set is used.
@@ -491,7 +491,7 @@ compare_rothenhausler <- function(n, ex_setting, f_setting) {
 }
 
 compare_lm <- function(n, ex_setting, f_setting) {
-  #' Generate simuation data and evaluate OLS estimator.
+  #' Generate simulation data and evaluate OLS estimator.
   #'
   #' @param n integer number of samples. For "401k" ex_setting this is ignored
   #'     and the whole data set is used.

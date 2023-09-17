@@ -2,7 +2,7 @@
 % Please edit documentation in R/score.R
 \name{basis_poly}
 \alias{basis_poly}
-\title{Estimate the score function of the dth covariate using a polynomial basis.}
+\title{Estimate the score function of the d'th covariate using a polynomial basis.}
 \usage{
 basis_poly(X, d, degree = 2, lambda = NULL)
 }

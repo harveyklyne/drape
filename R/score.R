@@ -257,7 +257,7 @@ sort_bin <- function(x, tol=1e-5, nmax=NULL){
 
 
 basis_poly <- function(X, d, degree = 2, lambda = NULL){
-  #' Estimate the score function of the dth covariate using a polynomial basis.
+  #' Estimate the score function of the d'th covariate using a polynomial basis.
   #'
   #' Computes the score function estimate when rho(X) is assumed to lie within the span
   #' of the polynomial basis of X.

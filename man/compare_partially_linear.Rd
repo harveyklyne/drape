@@ -2,7 +2,7 @@
 % Please edit documentation in R/simulation_settings.R
 \name{compare_partially_linear}
 \alias{compare_partially_linear}
-\title{Generate simuation data and evaluate partially linear estimator.}
+\title{Generate simulation data and evaluate partially linear estimator.}
 \usage{
 compare_partially_linear(n, ex_setting, f_setting)
 }
@@ -19,5 +19,5 @@ and the whole data set is used.}
 list containing estimate, standard error estimate, and sample theta (for debugging).
 }
 \description{
-Generate simuation data and evaluate partially linear estimator.
+Generate simulation data and evaluate partially linear estimator.
 }

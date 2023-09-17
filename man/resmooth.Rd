@@ -39,7 +39,7 @@ Vector "bw" of bandwidths used.
 }
 \description{
 Smooth the predictions of a fitted model by convolving them
-with a Gaussian kernel along the dth covariate.
+with a Gaussian kernel along the d'th covariate.
 }
 \examples{
 # Single bandwidth

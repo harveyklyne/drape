@@ -7,7 +7,7 @@ resmooth <- function(fit,
   #' Resmooth the predictions of a fitted model
   #'
   #' Smooth the predictions of a fitted model by convolving them
-  #' with a Gaussian kernel along the dth covariate.
+  #' with a Gaussian kernel along the d'th covariate.
   #'
   #' @param fit a prediction function taking matrix input and
   #'     returning a vector.
@@ -90,7 +90,7 @@ MC_sums <- function(a, n, nMC, nbw){
 
 new_X <- function(X, d, MC_variates, bw){
   #' Generate a matrix of covariates for use in resmoothing, in which
-  #' the dth column of X is translated successively by the Kronecker
+  #' the d'th column of X is translated successively by the Kronecker
   #' product of bw and MC_variates.
   #'
   #' @param X matrix of covariates.

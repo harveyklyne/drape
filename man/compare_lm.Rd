@@ -2,7 +2,7 @@
 % Please edit documentation in R/simulation_settings.R
 \name{compare_lm}
 \alias{compare_lm}
-\title{Generate simuation data and evaluate OLS estimator.}
+\title{Generate simulation data and evaluate OLS estimator.}
 \usage{
 compare_lm(n, ex_setting, f_setting)
 }
@@ -19,5 +19,5 @@ and the whole data set is used.}
 list containing estimate, standard error estimate, and sample theta (for debugging).
 }
 \description{
-Generate simuation data and evaluate OLS estimator.
+Generate simulation data and evaluate OLS estimator.
 }
