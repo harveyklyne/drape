@@ -1,9 +1,9 @@
 Package: drape
 Title: Doubly Robust Average Partial Effects
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
-    person("Harvey", "Klyne", role = c("aut", "cre", "cph"), email = "hklyne@g.harvard.edu"))
-Description: Doubly robust average partial effect estimation. This implementation contains methods for adding additional smoothness to plug-in regression procedures and for estimating score functions using smoothing splines. Details of the method can be found in Harvey Klyne and Rajen D. Shah (2023) <arXiv:2308.09207>.
+    person("Harvey", "Klyne", role = c("aut", "cre", "cph"), email = "hck33@cantab.ac.uk"))
+Description: Doubly robust average partial effect estimation. This implementation contains methods for adding additional smoothness to plug-in regression procedures and for estimating score functions using smoothing splines. Details of the method can be found in Harvey Klyne and Rajen D. Shah (2023) <doi:10.48550/arXiv.2308.09207>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 BugReports: https://github.com/harveyklyne/drape/issues
@@ -20,6 +20,7 @@ Suggests:
     rjson,
     rmarkdown,
     testthat (>= 3.0.0),
+    tibble,
     xgboost
 VignetteBuilder: knitr
 Config/testthat/edition: 3

@@ -2,7 +2,7 @@
 % Please edit documentation in R/simulation_settings.R
 \name{z_correlated_normal}
 \alias{z_correlated_normal}
-\title{Generate n copies of Z ~ N_{p}(0,Sigma), where Sigma_{jj} = 1, Sigma_{jk} = corr for all j not equal to k.}
+\title{Generate n copies of \eqn{Z ~ N_{p}(0,\Sigma)}, where \eqn{\Sigma_{jj} = 1}, \eqn{\Sigma_{jk} = \text{corr}} for all j not equal to k.}
 \usage{
 z_correlated_normal(n, p, corr)
 }
@@ -17,5 +17,5 @@ z_correlated_normal(n, p, corr)
 n by p matrix.
 }
 \description{
-Generate n copies of Z ~ N_{p}(0,Sigma), where Sigma_{jj} = 1, Sigma_{jk} = corr for all j not equal to k.
+Generate n copies of \eqn{Z ~ N_{p}(0,\Sigma)}, where \eqn{\Sigma_{jj} = 1}, \eqn{\Sigma_{jk} = \text{corr}} for all j not equal to k.
 }

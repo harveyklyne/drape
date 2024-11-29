@@ -5,3 +5,4 @@
 ^README\.Rmd$
 ^revdep$
 ^CRAN-RELEASE$
+^.idea$

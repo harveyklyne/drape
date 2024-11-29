@@ -22,13 +22,11 @@ the average partial effect.
 }
 \description{
 If ex_setting = "401k" then 401k data set is used for (X,Z). Otherwise:
-}
-\details{
-Z ~ N_{9}(0,Sigma),
-where Sigma_{jj} = 1, Sigma_{jk} = corr for all j not equal to k.
-X = m(Z) + s(Z)*ex
-where m and sigma are step functions of z_1 and z_3 respectively.
-Y = f(X,Z) + N(0,1)
+\deqn{Z ~ N_{9}(0,\Sigma),}
+where \eqn{\Sigma_{jj} = 1}, \eqn{\Sigma_{jk} = 0.5} for all j not equal to k.
+\deqn{X = m(Z) + s(Z)*ex,}
+where m and s are step functions of z_1 and z_3 respectively.
+\deqn{Y = f(X,Z) + N(0,1).}
 }
 \examples{
 simulate_data(100, "normal", "plm")

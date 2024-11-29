@@ -2,12 +2,11 @@ simulate_data <- function(n, ex_setting, f_setting){
   #' Generate simulation data.
   #'
   #' If ex_setting = "401k" then 401k data set is used for (X,Z). Otherwise:
-  #'
-  #' Z ~ N_{9}(0,Sigma),
-  #' where Sigma_{jj} = 1, Sigma_{jk} = corr for all j not equal to k.
-  #' X = m(Z) + s(Z)*ex
-  #' where m and sigma are step functions of z_1 and z_3 respectively.
-  #' Y = f(X,Z) + N(0,1)
+  #' \deqn{Z ~ N_{9}(0,\Sigma),}
+  #' where \eqn{\Sigma_{jj} = 1}, \eqn{\Sigma_{jk} = 0.5} for all j not equal to k.
+  #' \deqn{X = m(Z) + s(Z)*ex,}
+  #' where m and s are step functions of z_1 and z_3 respectively.
+  #' \deqn{Y = f(X,Z) + N(0,1).}
   #'
   #' @param n integer number of samples. For "401k" ex_setting this is ignored
   #'     and the whole data set is used.
@@ -123,7 +122,7 @@ simulate_data <- function(n, ex_setting, f_setting){
 
 
 z_correlated_normal <- function(n, p, corr){
-  #' Generate n copies of Z ~ N_{p}(0,Sigma), where Sigma_{jj} = 1, Sigma_{jk} = corr for all j not equal to k.
+  #' Generate n copies of \eqn{Z ~ N_{p}(0,\Sigma)}, where \eqn{\Sigma_{jj} = 1}, \eqn{\Sigma_{jk} = \text{corr}} for all j not equal to k.
   #'
   #' @param n integer number of samples.
   #' @param p integer number of dimensions.
