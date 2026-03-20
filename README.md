@@ -9,7 +9,7 @@
 Doubly Robust Average Partial Effect estimation.
 
 Details of the method can be found in [Klyne and Shah
-(2023)](https://arxiv.org/abs/2308.09207).
+(2026)](https://doi.org/10.1214/25-AOS2563).
 
 ## Installation
 
